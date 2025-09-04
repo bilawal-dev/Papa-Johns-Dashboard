@@ -35,7 +35,7 @@ export default function DashboardContainer() {
       </main>
 
       {/* AI Chat Widget */}
-      <AIChatWidget />
+      {/* <AIChatWidget /> */}
     </div>
   );
 } 

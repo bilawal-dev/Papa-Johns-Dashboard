@@ -17,30 +17,30 @@ export default function Sidebar({ activeView, onViewChange }: SidebarProps) {
       status: 'active',
       clickable: true
     },
-    {
-      id: 'northeast' as ViewType,
-      label: 'Northeast',
-      status: 'upcoming',
-      clickable: false
-    },
-    {
-      id: 'southeast' as ViewType,
-      label: 'Southeast',
-      status: 'current',
-      clickable: false
-    },
-    {
-      id: 'midwest' as ViewType,
-      label: 'Midwest',
-      status: 'completed',
-      clickable: false
-    },
-    {
-      id: 'west' as ViewType,
-      label: 'West',
-      status: 'completed',
-      clickable: false
-    }
+    // {
+    //   id: 'northeast' as ViewType,
+    //   label: 'Northeast',
+    //   status: 'upcoming',
+    //   clickable: false
+    // },
+    // {
+    //   id: 'southeast' as ViewType,
+    //   label: 'Southeast',
+    //   status: 'current',
+    //   clickable: false
+    // },
+    // {
+    //   id: 'midwest' as ViewType,
+    //   label: 'Midwest',
+    //   status: 'completed',
+    //   clickable: false
+    // },
+    // {
+    //   id: 'west' as ViewType,
+    //   label: 'West',
+    //   status: 'completed',
+    //   clickable: false
+    // }
   ];
 
   const getItemClasses = (item: any, isActive: boolean) => {

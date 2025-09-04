@@ -37,13 +37,11 @@ export function useProjectSummary(projects: SmartsheetRow[] = []) {
   const totalProjects = projects.length;
   const completedProjects = projects.filter(p => p.project_status.toLowerCase().includes('complete')).length;
   const inProgressProjects = totalProjects - completedProjects;
-  const plannedProjects = projects.filter(p => !p.survey_requested).length;
 
   return {
     totalProjects,
     completedProjects,
     inProgressProjects,
-    plannedProjects,
     completionPercentage: totalProjects > 0 ? Math.round((completedProjects / totalProjects) * 100) : 0
   };
 }

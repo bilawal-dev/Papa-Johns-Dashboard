@@ -13,17 +13,17 @@ const DEFAULT_COORDINATES = { lat: 39.5501, lon: -105.7821 };
 
 // Map project status to marker style
 function getProjectStatus(project: SmartsheetRow): 'planning' | 'permitting' | 'production' | 'shipping' | 'installation' | 'complete' {
-  const status = project.project_status?.toLowerCase() || '';
+  const projectStatus = project.project_status?.toLowerCase() || '';
 
-  if (project.project_status.toLowerCase().includes('complete')) {
+  if (projectStatus.includes('complete')) {
     return 'complete';
-  } else if (project.project_status.toLowerCase().includes('installation')) {
+  } else if (projectStatus.includes('installation')) {
     return 'installation';
-  } else if (project.project_status.toLowerCase().includes('shipping')) {
+  } else if (projectStatus.includes('shipping')) {
     return 'shipping';
-  } else if (project.project_status.toLowerCase().includes('production')) {
+  } else if (projectStatus.includes('production')) {
     return 'production';
-  } else if (project.project_status.toLowerCase().includes('permitting')) {
+  } else if (projectStatus.includes('permitting')) {
     return 'permitting';
   } else {
     return 'planning';
@@ -35,8 +35,7 @@ function getProjectCoordinates(project: SmartsheetRow): { lat: number; lon: numb
   if (project.lat && project.lon && project.lat !== null && project.lon !== null) {
     return { lat: project.lat, lon: project.lon, isDefault: false };
   }
-  console.log("MISSING COORDINATES");
-
+  
   // Add small random offset (±0.1 degrees) to avoid overlapping markers
   const randomOffsetLat = (Math.random() - 0.5) * 0.2; // ±0.1 degrees
   const randomOffsetLon = (Math.random() - 0.5) * 0.2; // ±0.1 degrees

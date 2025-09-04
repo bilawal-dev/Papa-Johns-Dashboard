@@ -126,7 +126,18 @@ export async function GET(_req: NextRequest) {
 
           return { ...obj, lat: coords?.lat || null, lon: coords?.lon || null }
         }) || []
-      ),
+      ).then(rows => rows.filter(row =>
+        // Filter out rows with "#NO MATCH" in key fields
+        row.project_name !== '#NO MATCH' &&
+        row.project_status !== '#NO MATCH' &&
+        row.city !== '#NO MATCH' &&
+        row.address !== '#NO MATCH' &&
+        row.st !== '#NO MATCH' &&
+        // Also filter out completely empty or invalid entries
+        row.project_name.trim() !== '' &&
+        row.city.trim() !== '' &&
+        row.address.trim() !== ''
+      )),
     }
 
     return NextResponse.json(transformedData)

@@ -1,7 +1,7 @@
-import MetricTile from '@/components/ui/metric-tile';
-import ProgressTile from '@/components/ui/progress-tile';
-import DataTable from '@/components/ui/data-table';
-import ActivityFeed from '@/components/ui/activity-feed';
+import MetricTile from '@/components/dashboard/metric-tile';
+import ProgressTile from '@/components/dashboard/progress-tile';
+import DataTable from '@/components/dashboard/data-table';
+import ActivityFeed from '@/components/dashboard/activity-feed';
 import { SOUTHEAST_METRICS, SOUTHEAST_STATES, ACTIVITY_ITEMS } from '@/constants/dashboard-data';
 
 export default function SoutheastView() {

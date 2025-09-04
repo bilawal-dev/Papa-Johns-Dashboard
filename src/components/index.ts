@@ -10,8 +10,8 @@ export { default as OverviewView } from './views/overview-view';
 export { default as SoutheastView } from './views/southeast-view';
 
 // UI Components
-export { default as MetricTile } from './ui/metric-tile';
-export { default as ProgressTile } from './ui/progress-tile';
-export { default as RegionStatusTile } from './ui/region-status-tile';
-export { default as DataTable } from './ui/data-table';
-export { default as ActivityFeed } from './ui/activity-feed'; 
+export { default as MetricTile } from './dashboard/metric-tile';
+export { default as ProgressTile } from './dashboard/progress-tile';
+export { default as RegionStatusTile } from './dashboard/region-status-tile';
+export { default as DataTable } from './dashboard/data-table';
+export { default as ActivityFeed } from './dashboard/activity-feed'; 

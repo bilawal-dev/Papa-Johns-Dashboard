@@ -39,8 +39,7 @@ export default function PapaJohnsView() {
   return (
     <div className="space-y-8">
       {/* Hero Section with Key Metrics */}
-      <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
-        {/* Total Projects Card */}
+      {/* <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
         <div className="bg-white/70 backdrop-blur-sm rounded-2xl shadow-lg border border-white/20 p-6 hover:shadow-xl transition-all duration-300">
           <div className="flex items-center justify-between">
             <div>
@@ -55,7 +54,6 @@ export default function PapaJohnsView() {
           </div>
         </div>
 
-        {/* Completed Projects Card */}
         <div className="bg-white/70 backdrop-blur-sm rounded-2xl shadow-lg border border-white/20 p-6 hover:shadow-xl transition-all duration-300">
           <div className="flex items-center justify-between">
             <div>
@@ -70,7 +68,6 @@ export default function PapaJohnsView() {
           </div>
         </div>
 
-        {/* In Progress Card */}
         <div className="bg-white/70 backdrop-blur-sm rounded-2xl shadow-lg border border-white/20 p-6 hover:shadow-xl transition-all duration-300">
           <div className="flex items-center justify-between">
             <div>
@@ -85,7 +82,6 @@ export default function PapaJohnsView() {
           </div>
         </div>
 
-        {/* Completion Percentage Card */}
         <div className="bg-white/70 backdrop-blur-sm rounded-2xl shadow-lg border border-white/20 p-6 hover:shadow-xl transition-all duration-300">
           <div className="flex items-center justify-between">
             <div>
@@ -99,7 +95,7 @@ export default function PapaJohnsView() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Map Section */}
       <div className="bg-white/70 backdrop-blur-sm rounded-2xl shadow-lg border border-white/20 overflow-hidden">
